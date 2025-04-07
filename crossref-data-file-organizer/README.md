@@ -35,11 +35,11 @@ OPTIONS:
 ```
 
 ## Design
-This utitlity uses a two passes to process the data file in a quick and memory effecient fashion:
+This utitlity uses a two passes to process the data file in a quick and memory efficient fashion:
 
 ### Pass 1: Distribution
 
-In the first pass, we process the input files in parallel using Rayon to distribute work across multiple cores, streaming and decompressing on-the-fly, while avoiding loading the entire files into memory. When using the filter options, we employ byte pattern matcching in the JSON parsing, allowing us to quickly skip irrelevant records.  To manage system resources, an LRU cache limits open file handles for intermediate files/
+In the first pass, we process the input files in parallel using Rayon to distribute work across multiple cores, streaming and decompressing on-the-fly, while avoiding loading the entire files into memory. When using the filter options, we employ byte pattern matching in the JSON parsing, allowing us to quickly skip irrelevant records.  To manage system resources, an LRU cache limits open file handles for intermediate files.
 
 ### Pass 2: Consolidation
 
