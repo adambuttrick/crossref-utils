@@ -1,6 +1,6 @@
 # Crossref Data File Indexer
 
-Rust utility for scanning an input directory containing the Crossref data file JSONL.gz files and creates three CSV indices describing their contents:
+Rust utility for scanning an input directory containing the Crossref data file JSONL.gz files and creating three CSV indices describing their contents:
 
 1. `member_index.csv`: Maps member IDs to input files
 2. `prefix_index.csv`: Maps member IDs and DOI prefixes to input files
