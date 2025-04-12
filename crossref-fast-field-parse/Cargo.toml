@@ -1,0 +1,23 @@
+[package]
+name = "crossref-fast-field-parse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+crossbeam-channel = "0.5"
+csv = "1.1"
+dashmap = "6.1"
+# Use standard flate2 crate if you don't have (or want to install) zlib-ng 
+# flate2 = "1.1.1"
+flate2 = { version = "1.1.1", features = ["zlib-ng"], default-features = false }
+glob = "0.3"
+indicatif = "0.17"
+lazy_static = "1.4"
+log = "0.4"
+num_cpus = "1.16"
+rayon = "1.10"
+serde_json = "1.0"
+simple_logger = "5.0"
+time = { version = "0.3", features = ["formatting"] } # For timestamp formatting
