@@ -71,7 +71,3 @@ Create a JSON file with the following structure to filter by member ID and optio
   "member_id_2": ["10.1234", "10.5678"]  // Include only specific prefixes
 }
 ```
-
-## License
-
-MIT
