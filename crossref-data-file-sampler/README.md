@@ -6,11 +6,6 @@ Rust utility for randomly sampling JSON records from Crossref data files. Effici
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/crossref-data-file-sampler.git
-cd crossref-data-file-sampler
-
-# Build the project
 cargo build --release
 ```
 
